@@ -1,0 +1,459 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    background-color: #f9f9f9;
+    padding-top: 60px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.rect {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    border-radius: 35%;
+}
+
+.options:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.yticon {
+    margin-left: 20px;
+}
+
+.mytube{
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.yticon i {
+    font-size: 30px;
+    color: red;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    background: #f8f8f8;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    background: #e0e0e0;
+}
+
+.search-button i {
+    font-size: 18px;
+    color: #606060;
+}
+
+.profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.cercle {
+    background-color: rgb(71, 70, 70);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pf1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+  
+.pf2:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+.pf3:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 80px;
+    height: calc(100% - 60px);
+    background: white;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar i {
+    font-size: 24px;
+    color: #606060;
+}
+
+.sidebar p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #606060;
+}
+
+.home:hover{
+    animation-duration: 1s;
+    scale :1.05;
+}
+.lesshorts:hover{
+    animation-duration: 1s;
+    scale :1.05;
+}
+.abn:hover{
+    animation-duration: 1s;
+    scale :1.05;
+}
+.playlist:hover{
+    animation-duration: 1s;
+    scale :1.05;
+}
+.historique:hover{
+    animation-duration: 1s;
+    scale :1.05;
+}
+.arpt:hover{
+    animation-duration: 1s;
+    scale :1.05;
+}
+.settings:hover{
+    animation-duration: 1s;
+    scale :1.05;
+}
+
+.kolchi {
+    margin-left: 160px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 20px;
+}
+
+.vid {
+    width: 300px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.vid:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.prfl {
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 10px;
+
+    background-size: cover;
+    background-size: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.titre {
+    height: 15px;
+    width: 200px;
+    margin-left: 60px;
+    margin-top: -45px;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.soustitre {
+    height: 10px;
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 60px;
+    color: gray;
+    font-size: smaller;
+}
+
+.kolchi1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+}
+.kolchi2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+}
+.kolchi3{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.sidebar i {
+    font-size: 24px;
+    color: black;
+    display: block; /* Assurer que l icone est visible */
+}
+
+.settings{
+    margin-top: 50px;
+}
+
+.profile-pic {
+    width: 38px; 
+    height: 38px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    cursor: pointer;
+    margin-left: 10px; 
+}
+.soustitre {
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    width: 100%;         
+}
+
+.titre{
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+     width: 100%;         
+}
+
+.p1{
+    background-image: url(./assests/img/elonMUSK.jpg);
+}
+.p2{
+    background-image: url(./assests/img/rawzu.jpg);
+}
+.p3{
+    background-image: url(./assests/img/bein.jpg);
+}
+.p4{
+    background-image: url(./assests/img/mrBEAST.jpg);
+}
+.p5{
+    background-image: url(./assests/img/ESISA_CINEMA_CLUB-removebg-preview.png);
+    background-color: black;
+}
+.p6{
+    background-image: url(./assests/img/guitar_profile.jpg);
+}
+.p7{
+    background-image: url(./assests/img/memes.jpg);
+}
+.p8{
+    background-image: url(./assests/img/fortnite.jpg);
+}
+.p9{
+    background-image: url(./assests/img/thumbnail9.jpg);
+}
+
+.menu{
+    display: flex;
+}
+.tous{
+    background-color: black;
+    height: 30px;
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    .header 
+    {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .options 
+    {
+        order: 1;
+    }
+    
+    .yticon, .mytube 
+    {
+        order: 2;
+        margin-left: 10px;
+    }
+    
+    .search-container 
+    {
+        order: 4;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .profile 
+    {
+        order: 3;
+        margin-right: 10px;
+    }
+    
+    .sidebar 
+    {
+        top: 120px;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    
+    .sidebar div 
+    {
+        width: 20%;
+        margin-bottom: 10px;
+    }
+    
+    .kolchi 
+    {
+        margin-left: 0;
+        margin-top: 180px; 
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .kolchi1, .kolchi2, .kolchi3 
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    
+    .vid 
+    {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+    
+    .settings 
+    {
+        margin-top: 0;
+    }
+}
+
+/* Pour les ecrans entre 769px et 1024px (tablette) */
+@media (min-width: 769px) and (max-width: 1024px) 
+{
+    .sidebar {
+        width: 70px;
+    }
+    
+    .kolchi {
+        margin-left: 90px;
+        gap: 30px;
+    }
+    
+    .vid {
+        width: 280px;
+        height: 160px;
+    }
+    
+    .kolchi1, .kolchi2, .kolchi3 {
+        gap: 30px;
+    }
+}
+
+/*desktop*/
+@media (min-width: 1025px) 
+{
+}
+
+/* Pour gerer le zoom sur IOS */
+html 
+{
+    -webkit-text-size-adjust: 100%; 
+}
+
+body 
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ajustements pour les elements flexibles */
+.vid, .search-container, .sidebar div 
+{
+    transition: all 0.3s ease; /* Transition fluide lors des redimensionnements */
+}
+
+/* Ajustements pour les textes */
+.titre, .soustitre 
+{
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
