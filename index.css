@@ -187,7 +187,7 @@ body {
 
 .kolchi {
     margin-left: 160px;
-    margin-top: 40px;
+    margin-top: 5px;
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
@@ -457,3 +457,36 @@ body
     text-overflow: ellipsis;
 }
 
+.category-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    padding: 12px 24px;
+    margin-top: 40px;
+    margin-left: 3cm;
+    white-space: nowrap;
+    width: 88%;
+    top: 56px;
+    justify-content: space-around;
+}
+
+.category-item {
+    color: #030303;
+    padding: 8px 12px;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+}
+
+.category-item:hover {
+    background-color: #e5e5e5;
+}
+
+.category-item:first-child {
+    background-color: #030303;
+    color: white;
+}
