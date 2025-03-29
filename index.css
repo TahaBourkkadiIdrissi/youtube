@@ -185,7 +185,7 @@ body {
     scale :1.05;
 }
 
-.kolchi {
+.ytbody {
     margin-left: 160px;
     margin-top: 5px;
     display: flex;
@@ -240,19 +240,19 @@ body {
     font-size: smaller;
 }
 
-.kolchi1{
+.ytbody1{
     display: flex;
     flex-direction: column;
     gap: 40px;
     justify-content: space-between;
 }
-.kolchi2{
+.ytbody2{
     display: flex;
     flex-direction: column;
     gap: 40px;
     justify-content: space-between;
 }
-.kolchi3{
+.ytbody3{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -325,136 +325,6 @@ body {
     background-color: black;
     height: 30px;
     width: 50px;
-}
-
-@media (max-width: 768px) {
-    .header 
-    {
-        padding: 10px;
-        flex-wrap: wrap;
-    }
-    
-    .options 
-    {
-        order: 1;
-    }
-    
-    .yticon, .mytube 
-    {
-        order: 2;
-        margin-left: 10px;
-    }
-    
-    .search-container 
-    {
-        order: 4;
-        width: 100%;
-        margin: 10px 0;
-    }
-    
-    .profile 
-    {
-        order: 3;
-        margin-right: 10px;
-    }
-    
-    .sidebar 
-    {
-        top: 120px;
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px 0;
-    }
-    
-    .sidebar div 
-    {
-        width: 20%;
-        margin-bottom: 10px;
-    }
-    
-    .kolchi 
-    {
-        margin-left: 0;
-        margin-top: 180px; 
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .kolchi1, .kolchi2, .kolchi3 
-    {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 20px;
-    }
-    
-    .vid 
-    {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16/9;
-    }
-    
-    .settings 
-    {
-        margin-top: 0;
-    }
-}
-
-/* Pour les ecrans entre 769px et 1024px (tablette) */
-@media (min-width: 769px) and (max-width: 1024px) 
-{
-    .sidebar {
-        width: 70px;
-    }
-    
-    .kolchi {
-        margin-left: 90px;
-        gap: 30px;
-    }
-    
-    .vid {
-        width: 280px;
-        height: 160px;
-    }
-    
-    .kolchi1, .kolchi2, .kolchi3 {
-        gap: 30px;
-    }
-}
-
-/*desktop*/
-@media (min-width: 1025px) 
-{
-}
-
-/* Pour gerer le zoom sur IOS */
-html 
-{
-    -webkit-text-size-adjust: 100%; 
-}
-
-body 
-{
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Ajustements pour les elements flexibles */
-.vid, .search-container, .sidebar div 
-{
-    transition: all 0.3s ease; /* Transition fluide lors des redimensionnements */
-}
-
-/* Ajustements pour les textes */
-.titre, .soustitre 
-{
-    max-width: 100%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .category-bar {
